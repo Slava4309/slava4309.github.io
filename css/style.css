@@ -1,0 +1,1095 @@
+/* line 2, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+}
+
+/* line 12, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 15, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.menu_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: none;
+  transition: .4s all;
+}
+
+/* line 30, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.menu_link:hover {
+  color: #707070;
+}
+
+/* line 32, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.menu_link:active {
+  color: #de354c;
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 46px;
+  transition: color .2s linear;
+}
+
+/* line 38, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 47, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 51, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  line-height: normal;
+}
+
+/* line 61, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.subheader_call {
+  color: #ffffff;
+  margin-top: 17px;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: right;
+  letter-spacing: normal;
+}
+
+/* line 69, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 25px;
+}
+
+/* line 79, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 2, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 97, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/main_bg.png") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 101, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.promo_header {
+  margin-top: 67px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 60px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 111, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.promo_subheader {
+  color: #ffffff;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 22px;
+}
+
+/* line 121, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.promo_descr {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  line-height: normal;
+  margin: 0;
+  margin-top: 23px;
+}
+
+/* line 132, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 188px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: 3px solid rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  border: none;
+  border-radius: 4px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 2, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 154, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.label {
+  position: relative;
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 167, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.label_white {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* line 170, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.label_map {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* line 176, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.title {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 32px;
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 186, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.title_white {
+  color: #ffffff;
+}
+
+/* line 189, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.subtitle {
+  position: relative;
+  margin-top: 5px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 199, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.subtitle_white {
+  color: #ffffff;
+}
+
+/* line 202, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 204, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 209, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+/* line 218, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.reasons_descr {
+  width: 343px;
+}
+
+/* line 220, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.reasons_subtitle {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 225, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 231, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/bg_mob_ap.png") center center/cover no-repeat;
+}
+
+/* line 235, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile .row {
+  margin-top: 32px;
+}
+
+/* line 237, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+/* line 244, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/mob_ap_1.png") center center/cover no-repeat;
+}
+
+/* line 246, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/mob_ap_2.png") center center/cover no-repeat;
+}
+
+/* line 248, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/mob_ap_3.png") center center/cover no-repeat;
+}
+
+/* line 250, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/mob_ap_4.png") center center/cover no-repeat;
+}
+
+/* line 252, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/mob_ap_5.png") center center/cover no-repeat;
+}
+
+/* line 254, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/mob_ap_6.png") center center/cover no-repeat;
+}
+
+/* line 256, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile_item_subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 31px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 265, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 279, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile_item_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+}
+
+/* line 285, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile_item_plus:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 14px;
+  width: 2px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 296, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: #ff5656;
+}
+
+/* line 300, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.choice {
+  min-height: 896px;
+  padding: 57px 0 138px 0;
+  background: url(../img/bg_uber.png) center center/cover no-repeat;
+}
+
+/* line 305, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.choice_img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+}
+
+/* line 310, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.choice_descr {
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/* line 318, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.require {
+  padding: 68px 0 84px 0;
+}
+
+/* line 320, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.require_block {
+  margin: 33px 0;
+}
+
+/* line 322, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.require_block_nmb {
+  margin-bottom: 0px;
+}
+
+/* line 324, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.require_title {
+  color: #1ca8c3;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+/* line 331, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+/* line 335, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+/* line 341, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.require_list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check_mark_blue.svg") center center/cover no-repeat;
+}
+
+/* line 351, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+/* line 355, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.require .warning .require_list li:before {
+  background: url("../icons/check_mark_red.svg") center center/cover no-repeat;
+}
+
+/* line 358, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.map {
+  padding-top: 49px;
+  min-height: 717px;
+  background: url("../img/world_bg.png") center center/cover no-repeat;
+}
+
+/* line 363, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.map_link {
+  position: relative;
+  display: block;
+  color: #1fbad6;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 486px;
+  text-decoration: none;
+}
+
+/* line 374, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+footer {
+  padding: 14px 23px 39px 23px;
+}
+
+/* line 377, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+footer a:hover {
+  text-decoration: none;
+}
+
+/* line 380, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_divider {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: 0 auto;
+}
+
+/* line 385, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+/* line 390, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 392, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 395, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 399, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+}
+
+/* line 408, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_social_item i {
+  color: #fff;
+}
+
+/* line 410, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 413, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 417, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_links_main a {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 422, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 426, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_links_sub a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 431, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.footer_links_lang {
+  display: block;
+  margin: 0 auto;
+  color: #1fbad6;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 440, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .promo_header {
+    font-size: 50px;
+  }
+  /* line 10, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 31px;
+  }
+  /* line 12, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .promo_descr {
+    font-size: 14px;
+  }
+  /* line 15, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .reasons_block {
+    align-items: flex-start;
+  }
+  /* line 17, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .reasons_descr {
+    width: 300px;
+  }
+  /* line 20, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_mobile {
+    width: 160px;
+    display: flex;
+    justify-content: start;
+  }
+  /* line 24, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_links {
+    width: 350px;
+  }
+  /* line 27, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .mobile_item {
+    width: 300px;
+  }
+  /* line 29, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    font-size: 21px;
+  }
+  /* line 32, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .choice_img {
+    width: 600px;
+  }
+  /* line 34, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .map {
+    min-height: 800px;
+  }
+  /* line 37, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_links {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 42, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 8px;
+  }
+  /* line 44, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 48, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .subheader_logo img {
+    width: 100%;
+  }
+  /* line 50, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .subheader_official {
+    font-size: 11px;
+  }
+  /* line 52, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .subheader_phone {
+    font-size: 18px;
+  }
+  /* line 54, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .subheader_btn {
+    margin-top: 21px;
+    height: 40px;
+    width: 100%;
+  }
+  /* line 59, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 61, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 64, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .reasons_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 67, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .reasons_round {
+    margin-right: 0;
+  }
+  /* line 69, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .reasons_descr {
+    width: 300px;
+    margin-top: 20px;
+  }
+  /* line 73, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .mobile_item {
+    width: 220px;
+  }
+  /* line 75, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    font-size: 18px;
+  }
+  /* line 77, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .choice {
+    min-height: 800px;
+  }
+  /* line 79, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .choice_img {
+    width: 600px;
+  }
+  /* line 81, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .map {
+    min-height: 650px;
+  }
+  /* line 84, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_links {
+    text-align: center;
+  }
+  /* line 86, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_wrapper {
+    flex-wrap: wrap;
+  }
+  /* line 88, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  /* line 93, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 100%;
+  }
+  /* line 95, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 100, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: .2s all;
+  }
+  /* line 113, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 115, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  /* line 119, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+  }
+  /* line 121, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 129, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    transition: .2s all;
+  }
+  /* line 137, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 139, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 141, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 143, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 145, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 147, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 150, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* line 158, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+  }
+  /* line 164, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .promo_header {
+    line-height: 45px;
+  }
+  /* line 166, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .choice {
+    min-height: 550px;
+    padding: 57px 0;
+  }
+  /* line 169, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .choice_img {
+    width: 500px;
+  }
+  /* line 171, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .map {
+    min-height: 200px;
+  }
+  /* line 174, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_links {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 178, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  header {
+    height: 30px;
+  }
+  /* line 180, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  nav {
+    height: 30px;
+  }
+  /* line 182, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .subheader {
+    height: 60px;
+    top: 30px;
+  }
+  /* line 185, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .subheader_official {
+    display: none;
+  }
+  /* line 187, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 15px;
+  }
+  /* line 189, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .subheader_phone {
+    font-size: 12x;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  /* line 194, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .subheader_btn {
+    width: 118px;
+    height: 22px;
+    font-size: 10px;
+    margin-top: 4px;
+  }
+  /* line 199, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+    padding: 23px 0 35px 0;
+  }
+  /* line 202, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .promo_descr {
+    display: none;
+  }
+  /* line 204, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .promo_header {
+    font-size: 30px;
+    padding: 0 24px;
+    line-height: 35px;
+  }
+  /* line 208, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 25px;
+    margin-top: 33px;
+    padding: 0 10px;
+    line-height: 30px;
+  }
+  /* line 213, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+    font-size: 14px;
+    text-align: center;
+  }
+  /* line 219, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  /* line 221, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .menu_item {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 224, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .menu_link {
+    display: block;
+  }
+  /* line 226, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .reasons {
+    padding: 22px 0 36px 0;
+  }
+  /* line 228, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .reasons_block {
+    margin-top: 26px;
+  }
+  /* line 230, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .reasons_round {
+    width: 100px;
+    height: 100px;
+  }
+  /* line 233, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .reasons_descr {
+    width: 100%;
+    margin-top: 27px;
+  }
+  /* line 236, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .reasons_subtitle {
+    font-size: 16px;
+  }
+  /* line 239, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .choice_img {
+    width: 290px;
+  }
+  /* line 241, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .map {
+    min-height: 200px;
+  }
+  /* line 244, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_divider {
+    width: 253px;
+    margin: 0 auto;
+    display: flex;
+  }
+  /* line 248, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_wrapper {
+    padding-top: 22px;
+  }
+  /* line 250, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_wrapper > div {
+    margin-bottom: 20px;
+  }
+  /* line 252, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    order: 2;
+  }
+  /* line 254, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(2) {
+    order: 1;
+  }
+  /* line 256, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    order: 3;
+  }
+  /* line 258, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_links {
+    width: 290px;
+  }
+  /* line 260, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_links_main {
+    padding: 0;
+    font-size: 14px;
+  }
+  /* line 263, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_links_sub {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 266, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_links a {
+    margin: 0 7px;
+  }
+  /* line 268, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .footer_links_lang {
+    margin-top: 10px;
+  }
+  /* line 270, ../../../../../../../../../../../../../Users/vyacheslav/Desktop/Uber/src/sass/_media.sass */
+  .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
